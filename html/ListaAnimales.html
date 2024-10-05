@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ListaAnimales.css">
+    <title>Animales</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <div class="logo">Fauna Colombiana</div>
+            <ul class="nav-links">
+                <li><a href="#habitats">Hábitats</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#animales" class="btn-animales">Animales</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Barra de navegación -->
+    <section>
+        <div class="Filtros">
+            <h2>Animales</h2>
+    
+        <!-- Menu desplegable Tipo de Animal -->
+        <form action="#">
+            <label for="lang">Tipo de Animal</label>
+            <select name="Tipo-animal" id="Tipo-animal">
+              <option value="Mamifero">Mamifero</option>
+              <option value="Aves">Aves</option>
+              <option value="Reptiles">Reptiles</option>
+              <option value="Peces">Peces</option>
+              <option value="Ranas">Ranas</option>
+            </select>
+      </form>
+    <!-- Menu desplegable Habitat -->
+    <form action="#">
+        <label for="lang">Habitat</label>
+            <select name="Habitat" id="Habitat">
+                <option value="Selvas-Tropicales">Selvas Tropicales</option>
+                <option value="Montañas-Páramos">Montañas y Páramos</option>
+                <option value="Llanuras-Sabana">Llanuras y Sabana</option>
+                <option value="Ríos-Humedales">Ríos y Humedales</option>
+                <option value="Costas-Playas">Costas y Playas</option>
+                </select>
+          </form>
+          <input type="search" name="buscar" id="buscar-animal">
+        </div>
+    </section>
+    
+    <section>
+        <div class="animales">
+            <div class="img-animal">
+                <img src="OsoAnteojosre.jpg" alt="Oso-Anteojos">
+            </div>
+            
+            <h3>Oso de Anteojos</h3>
+            <h5>Tremarctos ornatus</h5>
+            <p>Páramos</p>
+        </div>
+    </section>
+</body>
+</html>

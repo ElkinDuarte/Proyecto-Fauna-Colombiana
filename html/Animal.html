@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Animal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery y JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Oso de Anteojos</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navigation-bar">
+        <div class="logo">Fauna Colombiana</div>
+        <ul class="nav-links">
+            <li><a href="#habitats">Hábitats</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#animales" class="btn-animales">Animales</a></li>
+        </ul>
+    </nav>
+
+    <!-- Imagen del animal con nombre encima -->
+    <section class="Img-animal">
+        <img src="/images/OsoAnteojos.jpg" alt="Oso de Anteojos">
+        <div class="nombre">
+            <h1>Oso de Anteojos</h1>
+            <h2><i>Tremarctos ornatus</i></h2>
+        </div>
+    </section>
+    <!-- Descripción general y Características -->
+    <section class="content">
+        <div class="column">
+            <h3>Descripción General</h3>
+            <p>El Oso de Anteojos (<i>Tremarctos ornatus</i>) es el único oso nativo de América del Sur. 
+            Se distingue por las marcas blancas alrededor de sus ojos que le dan apariencia de "anteojos".
+            Habita en los bosques andinos de Colombia y otros países, alimentándose principalmente 
+            de frutas y plantas. Es una especie solitaria y nocturna, catalogada como vulnerable 
+            debido a la pérdida de su hábitat.</p>
+        </div>
+        
+        <div class="column">
+            <div class="characteristic">
+                <img src="/images/iconos/Tamaño.png" alt="Tamaño" width="25" height="25">
+                <div class="content-characteristic">
+                    <label>Tamaño:</label>
+                    <p>Entre 1.5 m y 2 m de largo.</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <img src="/images/iconos/Peso.png" alt="Peso" width="30" height="30">
+                <div class="content-characteristic">
+                    <label for="">Peso:</label>
+                    <p>Entre 100 y 175 kg.</p> 
+                </div>
+            </div>
+            <div class="characteristic">
+                <img src="/images/iconos/Colores.png" alt="Coloración" width="30" height="30">
+                <div class="content-characteristic">
+                    <label for="">Coloración</label>
+                    <p>Pelaje negro con marcas blancas o beige en el rostro y pecho.</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <img src="/images/iconos/world.png" alt="Habitats" width="30" height="30">
+                <div class="content-characteristic">
+                    <label for="">Hábitat</label>
+                    <p>Bosques nublados y páramos andinos.</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <img src="/images/iconos/Comida.png" alt="Dieta" width="30" height="30">
+                <div class="content-characteristic">
+                    <label for="">Dieta</label>
+                    <p>Principalmente herbívoro, consumiendo frutas, hojas y cortezas.</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <img src="/images/iconos/moon.png" alt="Luna" width="35" height="35">
+                <div class="content-characteristic">
+                    <label for="">Comportamiento</label>
+                    <p>Solitario y de hábitos nocturnos.</p>
+                </div>
+            </div>
+            <div class="characteristic">
+                <img src="/images/iconos/conservacion.png" alt="Conservacion" width="30" height="30">
+                <div class="content-characteristic">
+                    <label for="">Estado de Conservación</label>
+                    <p>Vulnerable, amenazado por la pérdida de hábitat y caza furtiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de Imagenes con boostrap-->
+    <div class="container mt-5 mb-5 fondo-contenedor">
+        <div class="row row-contenido">
+            <!-- Columna izquierda con el carrusel -->
+        <div class="col-md-6">
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="OsoAnteojos.jpg" class="d-block w-100" alt="Oso de Anteojos 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/Jaguar.png" class="d-block w-100" alt="Oso de Anteojos 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Jaguar-removebg-preview.png" class="d-block w-100" alt="Oso de Anteojos 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    <!-- Columna derecha con el texto de curiosidades -->
+    <div class="col-md-6">
+        <div class="curiosidades">
+                <h3>Curiosidades del Oso de Anteojos</h3>
+                <p>1. El oso de anteojos es el único oso nativo de América del Sur.</p>
+                <p>2. Su nombre se debe a las marcas blancas alrededor de sus ojos que parecen gafas.</p>
+                <p>3. Viven en las montañas andinas, principalmente en bosques nubosos y páramos.</p>
+                <p>4. Son omnívoros, con una dieta que incluye frutas, plantas, insectos, y pequeños animales.</p>
+                <p>5. Son una especie en peligro de extinción debido a la pérdida de hábitat y la caza ilegal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección del Hábitat -->
+    <section id="habitats">
+        <h3>Hábitat</h3>
+        <div class="content-habitat">
+            <script>
+                var map = L.map('map').setView([4.570868, -74.297333], 6); // Coordenadas centradas en Colombia
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+            </script>
+            <div class="mapa">
+                <img src="image.png" alt="mapa">
+            </div>
+            <div class="regiones">
+                <h4>Regiones donde se encuentra</h4>
+                <ul>
+                    <li>Región 1</li>
+                    <li>Región 2</li>
+                    <li>Región 3</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Fauna Colombiana. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
