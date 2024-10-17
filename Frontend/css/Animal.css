@@ -6,8 +6,8 @@
 
 /* Estilos para la barra de navegación */
 .navigation-bar {
-    background-color: #052B0E;
-    opacity: 0.6;
+    background-color: #2F4F2F; /* Verde bosque oscuro */
+    opacity: 0.8;
     width: 100%;
     height: 80px;
     display: flex;
@@ -17,12 +17,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Mantenerla siempre encima */
+    z-index: 1000;
 }
 
 /* Estilo para el logo de la barra */
 .navigation-bar .logo {
-    color: #32CD32;
+    color: #98FB98; /* Verde pálido */
     font-size: 24px;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
@@ -52,7 +52,7 @@
 
 /* Botón especial para "Animales" */
 .btn-animales {
-    background-color: #32CD32;
+    background-color: #32CD32; /* Verde lima */
     padding: 10px 20px;
     border-radius: 5px;
     color: black;
@@ -61,7 +61,7 @@
 }
 
 .btn-animales:hover {
-    background-color: #00DD6F;
+    background-color: #00DD6F; /* Verde más claro */
 }
 
 /* Imagen del animal */
@@ -100,15 +100,23 @@
     padding: 40px 20px;
     gap: 30px;
     font-family: 'Arial', sans-serif;
+    background-color: #A9D08E; /* Verde suave */
 }
 
 .column {
     width: 45%;
+    background-color: #E6F2E6; /* Verde muy claro */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#descripcionGeneral {
+    text-align: center;
 }
 
 .column h3 {
     font-size: 24px;
-    color: #052B0E;
+    color: #2F4F2F; /* Verde bosque oscuro */
     margin-bottom: 15px;
 }
 
@@ -120,38 +128,43 @@
 
 .column label {
     font-weight: bold;
-    color: #052B0E;
+    color: #2F4F2F;
     margin-top: 10px;
     display: block;
 }
 
-.characteristic{
+/* Características */
+.characteristic {
     display: flex;
     align-items: center;
 }
-.characteristic img{
+
+.characteristic img {
     margin-bottom: 8px;
 }
-.content-characteristic{
+
+.content-characteristic {
     margin-left: 10px;
 }
-.content-characteristic label{
+
+.content-characteristic label {
     margin-bottom: 0px;
 }
-.content-characteristic p{
+
+.content-characteristic p {
     margin-left: 1px;
-    margin-top: none;
 }
+
 /* Sección del hábitat */
 #habitats {
     padding: 40px 20px;
-    background-color: #f4f4f4;
+    background-color: #E6F2E6; /* Verde claro */
     text-align: center;
 }
 
 #habitats h3 {
     font-size: 24px;
-    color: #052B0E;
+    color: #2F4F2F; /* Verde bosque oscuro */
     margin-bottom: 20px;
 }
 
@@ -174,7 +187,7 @@
 
 /* Footer */
 footer {
-    background-color: #052B0E;
+    background-color: #2F4F2F;
     color: white;
     text-align: center;
     padding: 20px;
@@ -188,5 +201,3 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
-
-
