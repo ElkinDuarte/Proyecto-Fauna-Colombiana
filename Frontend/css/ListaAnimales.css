@@ -26,7 +26,10 @@
     font-size: 24px;
     font-weight: bold;
 }
-
+.logo a {
+    color: #32CD32;
+    text-decoration: none;
+}
 /* Lista de enlaces */
 .nav-links {
     list-style: none;
