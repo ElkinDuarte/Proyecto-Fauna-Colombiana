@@ -185,6 +185,23 @@
     margin-bottom: 10px;
 }
 
+.mapa{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+.mapa path{
+    fill: Khaki;
+    stroke: SaddleBrown;
+    stroke-width: 1px;
+}
+
+.resaltar {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2;
+}
+
 /* Footer */
 footer {
     background-color: #2F4F2F;
