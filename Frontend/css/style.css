@@ -81,10 +81,10 @@ body {
 
 .cita {
     background-color: #fff;
-    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: none;
 }
 
 .cita .contenido {
@@ -115,10 +115,17 @@ body {
 .cita .imagenes {
     width: 400px;
     height: 100%;
+    position: relative;
+    border-right: none;
+}
+#Jaguar{
+    float: left;
+}
+#Guacamaya1{
+    width: 350px;
 }
 
 .cita .imagenes img{
-    display: block;
     width: auto;
 }
 

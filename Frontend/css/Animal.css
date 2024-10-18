@@ -28,6 +28,10 @@
     font-family: 'Arial', sans-serif;
 }
 
+.logo a{
+    color: #98FB98;
+    text-decoration: none;
+}
 /* Lista de enlaces */
 .nav-links {
     list-style: none;
