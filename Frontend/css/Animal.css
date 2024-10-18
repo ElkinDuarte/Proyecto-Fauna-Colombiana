@@ -196,10 +196,66 @@
     stroke-width: 1px;
 }
 
-.resaltar {
+#CONAR {
     fill: #32CD32; 
     stroke: #2F4F2F; 
-    stroke-width: 2;
+    stroke-width: 2px;
+}
+#COCAU {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COPUT {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COHUI {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+
+#COTOL {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COCUN{
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COBOY {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COSAN {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COANT {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COCAL {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#COMET {
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
+}
+#CORIS{
+    fill: #32CD32; 
+    stroke: #2F4F2F; 
+    stroke-width: 2px;
 }
 
 /* Footer */
