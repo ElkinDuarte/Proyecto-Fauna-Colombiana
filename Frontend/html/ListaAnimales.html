@@ -54,29 +54,50 @@
         <script>
             document.addEventListener("DOMContentLoaded", async () => {
                 try {
-                    // Consumir el API del backend
-                    const response = await fetch('http://localhost:8080/api/animales');
-                    if (!response.ok) throw new Error("Error al obtener los animales");
+                    const cache = new Map();
+                    const apiUrl = 'http://localhost:8080/api/animales';
                     
-                    const animales = await response.json();
-                    const contenedor = document.querySelector('.animales');
-                    
-                    // Limpiar el contenedor antes de agregar tarjetas dinámicas
-                    contenedor.innerHTML = '';
-                    animales.forEach(animal => {
-                        const tarjeta = `
-                            <a href="#" class="animal-card">
+                    // Función para obtener datos (con cacheo)
+                    const fetchData = async () => {
+                        if (cache.has(apiUrl)) {
+                            return cache.get(apiUrl); // Obtener de la caché
+                        }
+                        const response = await fetch(apiUrl);
+                        if (!response.ok) throw new Error("Error al obtener los animales");
+                        const data = await response.json();
+                        cache.set(apiUrl, data); // Guardar en la caché
+                        return data;
+                    };
+
+                    // Función para renderizar animales
+                    const renderAnimales = (animales) => {
+                        const contenedor = document.querySelector('.animales');
+                        contenedor.innerHTML = ''; // Limpiar contenedor
+
+                        const fragment = document.createDocumentFragment(); // Crear fragmento
+                        animales.forEach(animal => {
+                            const tarjeta = document.createElement('a');
+                            tarjeta.classList.add('animal-card');
+                            tarjeta.href = `/Frontend/html/animal.html?id=${animal.idAnimal}`;
+                            tarjeta.innerHTML = `
                                 <img class="img-animal" src="${animal.imgFondo || '/default.jpg'}" alt="${animal.nomCom}">
                                 <h3>${animal.nomCom}</h3>
                                 <h5>${animal.nomCie}</h5>
-                                <p>${animal.regiones || 'Región no especificada'}</p>
-                            </a>`;
-                        contenedor.innerHTML += tarjeta;
-                    });
+                                <p>${animal.regiones || 'Región no especificada'}</p>`;
+                            fragment.appendChild(tarjeta); // Añadir tarjeta al fragmento
+                        });
+                        contenedor.appendChild(fragment); // Renderizar fragmento en el DOM
+                    };
+
+                    // Obtener y renderizar datos
+                    const animales = await fetchData();
+                    renderAnimales(animales);
+
                 } catch (error) {
                     console.error("Error al cargar los animales:", error);
                 }
             });
+
         </script>
         
     </section>
