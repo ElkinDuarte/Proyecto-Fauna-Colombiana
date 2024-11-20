@@ -149,6 +149,22 @@
     margin: 40px;
 }
 
+/* Footer */
+footer {
+    background-color: #2F4F2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
 /* Media queries para responsive */
 @media (max-width: 768px) {
     .Filtros {

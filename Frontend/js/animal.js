@@ -20,20 +20,21 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.querySelector("#animal-nombre-cientifico").textContent = animal.nomCie || "Nombre Científico Desconocido";
         document.querySelector("#descripcion-general").textContent = animal.desGeneral || "Descripción no disponible";
 
-        document.querySelector("#animal-tamano").textContent = animal.tamano || "-";
-        document.querySelector("#animal-peso").textContent = animal.peso || "-";
-        document.querySelector("#animal-coloracion").textContent = animal.coloracion || "-";
-        document.querySelector("#animal-habitat").textContent = animal.habitat || "-";
-        document.querySelector("#animal-dieta").textContent = animal.dieta || "-";
-        document.querySelector("#animal-comportamiento").textContent = animal.comportamiento || "-";
-        document.querySelector("#animal-conservacion").textContent = animal.conservacion || "-";
+        document.querySelector("#animal-tamano").textContent = animal.caracteristicas?.tamano + " Metros"|| "-";
+        document.querySelector("#animal-peso").textContent = animal.caracteristicas?.peso + " Kg" || "-";
+        document.querySelector("#animal-coloracion").textContent = animal.caracteristicas?.coloracion || "-";
+        document.querySelector("#animal-habitat").textContent = animal.habitat?.desHabitat || "No especificado";
+        document.querySelector("#animal-dieta").textContent = animal.caracteristicas?.dieta || "-";
+        document.querySelector("#animal-comportamiento").textContent = animal.caracteristicas?.comportamiento || "-";
+        document.querySelector("#animal-conservacion").textContent = animal.caracteristicas?.conservacion || "-";
 
         // Actualizar imágenes del carrusel
         const carouselInner = document.querySelector("#carousel-inner");
         carouselInner.innerHTML = ""; // Limpiar carrusel existente
 
-        if (animal.imgSlide && animal.imgSlide.length > 0) {
-            animal.imgSlide.forEach((img, index) => {
+        if (animal.imgSlide) {
+            const images = animal.imgSlide.split(","); // Separar imágenes por coma
+            images.forEach((img, index) => {
                 const slide = document.createElement("div");
                 slide.className = `carousel-item ${index === 0 ? "active" : ""}`;
                 slide.innerHTML = `<img src="${img}" class="d-block w-100" alt="Imagen del Animal">`;
@@ -50,8 +51,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         // Actualizar curiosidades
         const curiosidadesContainer = document.querySelector("#curiosidades-container");
         curiosidadesContainer.innerHTML = `<h3>Curiosidades del ${animal.nomCom || "Animal"}</h3>`;
-        if (animal.curiosidades && animal.curiosidades.length > 0) {
-            animal.curiosidades.forEach((curiosidad, index) => {
+        if (animal.curiosidades) {
+            const curiosidades = animal.curiosidades.split(","); // Separar curiosidades por coma
+            curiosidades.forEach((curiosidad, index) => {
                 const p = document.createElement("p");
                 p.textContent = `${index + 1}. ${curiosidad}`;
                 curiosidadesContainer.appendChild(p);
