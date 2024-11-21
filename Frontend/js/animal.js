@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.querySelector("#animal-nombre-cientifico").textContent = animal.nomCie || "Nombre Científico Desconocido";
         document.querySelector("#descripcion-general").textContent = animal.desGeneral || "Descripción no disponible";
 
-        document.querySelector("#animal-tamano").textContent = animal.caracteristicas?.tamano + " Metros"|| "-";
-        document.querySelector("#animal-peso").textContent = animal.caracteristicas?.peso + " Kg" || "-";
+        document.querySelector("#animal-tamano").textContent = animal.caracteristicas?.tamano|| "-";
+        document.querySelector("#animal-peso").textContent = animal.caracteristicas?.peso|| "-";
         document.querySelector("#animal-coloracion").textContent = animal.caracteristicas?.coloracion || "-";
         document.querySelector("#animal-habitat").textContent = animal.habitat?.desHabitat || "No especificado";
         document.querySelector("#animal-dieta").textContent = animal.caracteristicas?.dieta || "-";

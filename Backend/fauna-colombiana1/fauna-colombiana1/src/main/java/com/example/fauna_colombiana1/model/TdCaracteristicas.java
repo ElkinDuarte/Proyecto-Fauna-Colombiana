@@ -13,10 +13,10 @@ public class TdCaracteristicas {
     private Integer idCaracteristica;
         
     @Column(name = "Tamaño")
-    private Double tamano;
+    private String tamano;
 
     @Column(name = "Peso")
-    private Double peso;
+    private String peso;
 
     @Column(name = "Coloracion")
     private String coloracion;
