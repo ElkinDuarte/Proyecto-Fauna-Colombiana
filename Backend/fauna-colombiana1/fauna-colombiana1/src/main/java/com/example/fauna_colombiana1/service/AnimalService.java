@@ -4,7 +4,9 @@
     import com.example.fauna_colombiana1.repository.AnimalRepository;
     import org.springframework.stereotype.Service;
 
-    import java.util.List;
+    import org.springframework.data.domain.Page;
+    import org.springframework.data.domain.Pageable;
+
 
     @Service
     public class AnimalService {
@@ -15,8 +17,8 @@
             this.repository = repository;
         }
 
-        public List<TmAnimal> findAll() {
-            return repository.findAll();
+        public Page<TmAnimal> findAll(Pageable pageable) {
+            return repository.findAll(pageable);
         }
 
         public TmAnimal findById(Integer id) {

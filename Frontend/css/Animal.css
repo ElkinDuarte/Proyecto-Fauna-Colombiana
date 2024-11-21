@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif; /* Cambia por tu preferida */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
 /* Estilos para la barra de navegación */
 .navigation-bar {
     background-color: #2F4F2F; /* Verde bosque oscuro */

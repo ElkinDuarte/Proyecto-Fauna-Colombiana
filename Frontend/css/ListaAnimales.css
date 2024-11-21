@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Cambia por tu preferida */
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', serif;
 }
 
 /* Estilos para la barra de navegación */
@@ -124,7 +131,7 @@
 }
 
 .Filtros h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -165,6 +172,43 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc; /* Gris para botones deshabilitados */
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #45a049; /* Verde más oscuro */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+#pageInfo {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
 /* Media queries para responsive */
 @media (max-width: 768px) {
     .Filtros {
