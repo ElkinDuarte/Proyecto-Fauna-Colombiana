@@ -64,6 +64,21 @@ document.addEventListener("DOMContentLoaded", async () => {
             curiosidadesContainer.appendChild(p);
         }
 
+        // Actualizar regiones
+        const regionesContainer = document.querySelector("#habitats");
+        if (animal.regiones) {
+            const regiones = animal.regiones.split(","); 
+            regiones.forEach((regiones, index) => {
+                const p = document.createElement("p");
+                p.textContent = `${index + 1}. ${regiones}`;
+                regionesContainer.appendChild(p);
+            });
+        }else {
+            const p = document.createElement("p");
+            p.textContent = "No hay curiosidades disponibles para este animal.";
+            regionesContainer.appendChild(p);
+        }
+
     } catch (error) {
         console.error("Error al cargar los datos del animal:", error);
     }

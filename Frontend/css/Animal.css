@@ -1,3 +1,4 @@
+/* Ajustes generales */
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +6,16 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Cambia por tu preferida */
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', serif;
 }
 
-/* Estilos para la barra de navegación */
+/* Barra de navegación */
 .navigation-bar {
-    background-color: #2F4F2F; /* Verde bosque oscuro */
+    background-color: #2F4F2F;
     opacity: 0.8;
     width: 100%;
     height: 80px;
@@ -28,9 +29,8 @@ h1, h2, h3 {
     z-index: 1000;
 }
 
-/* Estilo para el logo de la barra */
 .navigation-bar .logo {
-    color: #98FB98; /* Verde pálido */
+    color: #98FB98;
     font-size: 24px;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
@@ -42,17 +42,15 @@ h1, h2, h3 {
 }
 
 .logo a:hover {
-    color: inherit; 
     text-decoration: none; 
 }
-/* Lista de enlaces */
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-/* Estilo para los enlaces */
 .nav-links li a {
     color: white;
     text-decoration: none;
@@ -67,9 +65,8 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
-/* Botón especial para "Animales" */
 .btn-animales {
-    background-color: #32CD32; /* Verde lima */
+    background-color: #32CD32;
     padding: 10px 20px;
     border-radius: 5px;
     color: black;
@@ -77,17 +74,15 @@ h1, h2, h3 {
     opacity: 1;
 }
 
-
-
 .btn-animales:hover {
-    background-color: #00DD6F; /* Verde más claro */
+    background-color: #00DD6F;
 }
 
 /* Imagen del animal */
 .Img-animal {
     position: relative;
-    height: 100vh; /* Ocupa toda la pantalla */
     width: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -97,7 +92,6 @@ h1, h2, h3 {
     object-fit: cover;
 }
 
-/* Nombre del animal sobre la imagen */
 .Img-animal .nombre {
     position: absolute;
     bottom: 20px;
@@ -112,33 +106,27 @@ h1, h2, h3 {
     font-family: 'Arial', sans-serif;
 }
 
-/* Sección de contenido */
+/* Contenido */
 .content {
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
     gap: 30px;
     font-family: 'Arial', sans-serif;
-    background-color: #A9D08E; /* Verde suave */
+    background-color: #A9D08E;
+    flex-wrap: wrap;
 }
 
 .column {
     width: 45%;
-    background-color: #E6F2E6; /* Verde muy claro */
+    background-color: #E6F2E6;
     border-radius: 10px;
     padding: 10px;
 }
 
-#descripcionGeneral {
-    text-align: center;
-}
-#descripcionGeneral1 {
-    text-align: center;
-}
-
 .column h3 {
     font-size: 24px;
-    color: #2F4F2F; /* Verde bosque oscuro */
+    color: #2F4F2F;
     margin-bottom: 15px;
 }
 
@@ -148,17 +136,10 @@ h1, h2, h3 {
     line-height: 1.6;
 }
 
-.column label {
-    font-weight: bold;
-    color: #2F4F2F;
-    margin-top: 10px;
-    display: block;
-}
-
 .carousel-inner img {
     width: 100%;
-    height: 400px; /* Ajusta esta altura según tus necesidades */
-    object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
+    height: 400px;
+    object-fit: cover;
 }
 
 /* Características */
@@ -175,114 +156,59 @@ h1, h2, h3 {
     margin-left: 10px;
 }
 
-.content-characteristic label {
-    margin-bottom: 0px;
-}
-
 .content-characteristic p {
     margin-left: 1px;
 }
 
-/* Sección del hábitat */
-#habitats {
-    padding: 40px 20px;
-    background-color: #E6F2E6; /* Verde claro */
+/* Hábitats */
+.contentHabitat {
+    background-color: #E6F2E6;
     text-align: center;
+    padding: 20px;
 }
 
-#habitats h3 {
+.contentHabitat h3 {
     font-size: 24px;
-    color: #2F4F2F; /* Verde bosque oscuro */
-    margin-bottom: 20px;
+    color: #2F4F2F;
 }
 
-#habitats img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-#habitats ul {
-    list-style: none;
-    padding: 0;
-}
-
-#habitats ul li {
-    font-size: 18px;
+.contentHabitat p {
+    font-size: 20px;
     color: #333;
     margin-bottom: 10px;
 }
 
-.mapa{
-    width: 60%;
-    height: 100%;
-    margin: auto;
+.habitats {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px;
 }
-.mapa path{
+
+.mapa {
+    flex: 1; 
+    max-width: 50%;
+    height: auto; 
+    margin: 0; 
+}
+
+#habitats {
+    flex: 1;
+    padding: 20px; 
+    text-align: left;
+}
+
+.mapa path {
     fill: Khaki;
     stroke: SaddleBrown;
     stroke-width: 1px;
 }
 
 #CONAR {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COCAU {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COPUT {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COHUI {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-
-#COTOL {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COCUN{
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COBOY {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COSAN {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COANT {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COCAL {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#COMET {
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
-    stroke-width: 2px;
-}
-#CORIS{
-    fill: #32CD32; 
-    stroke: #2F4F2F; 
+    fill: #32CD32;
+    stroke: #2F4F2F;
     stroke-width: 2px;
 }
 
@@ -301,4 +227,101 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .navigation-bar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Img-animal {
+        height: 60vh; /* Ajusta la altura de la imagen */
+    }
+
+    .Img-animal .nombre {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .column {
+        width: 100%; /* Hacer las columnas más anchas en pantallas medianas */
+        max-width: 90%;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Img-animal {
+        height: 50vh; /* Ajusta la altura de la imagen en pantallas más pequeñas */
+    }
+
+    .Img-animal .nombre {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    .column h3 {
+        font-size: 20px;
+    }
+
+    .column p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .Img-animal {
+        height: 40vh; /* Altura reducida en pantallas muy pequeñas */
+    }
+
+    .Img-animal .nombre {
+        font-size: 18px;
+        padding: 6px;
+    }
+
+    .column h3 {
+        font-size: 18px;
+    }
+
+    .column p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
 }
